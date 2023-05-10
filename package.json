@@ -1,5 +1,21 @@
 {
   "dependencies": {
     "lit": "^2.7.4"
-  }
+  },
+  "name": "@markjameshoward/creditcard",
+  "version": "0.0.1-alpha.1",
+  "main": "CreditCard.ts",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkJamesHoward/CreditCard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkJamesHoward/CreditCard/issues"
+  },
+  "homepage": "https://github.com/MarkJamesHoward/CreditCard#readme",
+  "description": ""
 }
