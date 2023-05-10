@@ -51,7 +51,7 @@ export class CreditCard extends LitElement {
                       Purchase Rate
                       <span style="color: red">${this.rate}%</span>
                     </div>
-                    <div>Fee ${this.fee}%</div>`,
+                    <div>Fee $${this.fee}</div>`,
               ],
               [
                 "fee",
