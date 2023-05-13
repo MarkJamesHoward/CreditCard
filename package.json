@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
     "lit": "^2.7.4"
   },
   "name": "@markjameshoward/creditcard",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "main": "CreditCard.ts",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarkJamesHoward/CreditCard.git"
@@ -17,5 +17,8 @@
     "url": "https://github.com/MarkJamesHoward/CreditCard/issues"
   },
   "homepage": "https://github.com/MarkJamesHoward/CreditCard#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
 }
