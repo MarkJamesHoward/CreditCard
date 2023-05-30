@@ -524,10 +524,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .static {
   position: static;
 }
@@ -578,10 +574,6 @@ video {
 
 .grow {
   flex-grow: 1;
-}
-
-.grow-0 {
-  flex-grow: 0;
 }
 
 .basis-1\\/2 {
@@ -645,29 +637,24 @@ video {
   padding: 0.75rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -749,50 +736,13 @@ video {
   text-decoration-line: underline;
 }
 
-@container (min-width: 24rem) {
-  .\\@sm\\:visible {
-    visibility: visible;
-  }
-
-  .\\@sm\\:block {
-    display: block;
-  }
-
-  .\\@sm\\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-}
-
 @container (min-width: 32rem) {
-  .\\@lg\\:block {
-    display: block;
-  }
-
   .\\@lg\\:flex-row {
     flex-direction: row;
   }
 }
 
-@container (min-width: 36rem) {
-  .\\@xl\\:block {
-    display: block;
-  }
-
-  .\\@xl\\:flex-row {
-    flex-direction: row;
-  }
-
-  .\\@xl\\:items-center {
-    align-items: center;
-  }
-}
-
 @container (min-width: 42rem) {
-  .\\@2xl\\:order-last {
-    order: 9999;
-  }
-
   .\\@2xl\\:block {
     display: block;
   }
@@ -805,14 +755,23 @@ video {
     align-items: center;
   }
 
-  .\\@2xl\\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .\\@2xl\\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@container (min-width: 56rem) {
+  .\\@4xl\\:order-last {
+    order: 9999;
+  }
+
+  .\\@4xl\\:flex-row {
+    flex-direction: row;
+  }
+
+  .\\@4xl\\:items-center {
+    align-items: center;
   }
 }
 
@@ -820,18 +779,6 @@ video {
   .\\@5xl\\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\\:flex-row {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\\:flex-row {
-    flex-direction: row;
   }
 }
  `
