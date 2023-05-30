@@ -1,4 +1,6 @@
-/*
+
+    import { css } from "lit";
+    export const TWStyles = css` /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
@@ -29,9 +31,9 @@
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
+4. Use the user's configured sans font-family by default.
+5. Use the user's configured sans font-feature-settings by default.
+6. Use the user's configured sans font-variation-settings by default.
 */
 
 html {
@@ -54,7 +56,7 @@ html {
 
 /*
 1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+2. Inherit line-height from html so users can set them as a class directly on the html element.
 */
 
 body {
@@ -121,8 +123,8 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured mono font family by default.
+2. Correct the odd em font sizing in all browsers.
 */
 
 code,
@@ -144,7 +146,7 @@ small {
 }
 
 /*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+Prevent sub and sup elements from affecting the line height in all browsers.
 */
 
 sub,
@@ -240,7 +242,7 @@ Use the modern Firefox focus style for all focusable elements.
 }
 
 /*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+Remove the additional :invalid styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
 
 :-moz-ui-invalid {
@@ -286,7 +288,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
+2. Change font properties to inherit in Safari.
 */
 
 ::-webkit-file-upload-button {
@@ -387,8 +389,8 @@ Make sure disabled buttons don't get the pointer cursor.
 }
 
 /*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+1. Make replaced elements display: block by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add vertical-align: middle to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
@@ -522,6 +524,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.static {
+  position: static;
+}
+
 .order-first {
   order: -9999;
 }
@@ -542,28 +552,44 @@ video {
   display: inline-block;
 }
 
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.w-\[50vmin\] {
+.w-\\[50vmin\\] {
   width: 50vmin;
 }
 
-.basis-1\/3 {
-  flex-basis: 33.333333%;
+.shrink {
+  flex-shrink: 1;
 }
 
-.basis-1\/2 {
+.flex-grow {
+  flex-grow: 1;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.grow-0 {
+  flex-grow: 0;
+}
+
+.basis-1\\/2 {
   flex-basis: 50%;
+}
+
+.basis-1\\/3 {
+  flex-basis: 33.333333%;
 }
 
 .flex-row {
@@ -586,8 +612,16 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .justify-items-center {
   justify-items: center;
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .self-center {
@@ -607,6 +641,10 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -617,6 +655,21 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -624,6 +677,11 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -639,7 +697,7 @@ video {
   text-decoration-line: none;
 }
 
-.\@container {
+.\\@container {
   container-type: inline-size;
 }
 
@@ -677,30 +735,104 @@ video {
   }
 }
 
-.hover\:bg-blue-600:hover {
+.hover\\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.hover\:text-blue-200:hover {
+.hover\\:text-blue-200:hover {
   --tw-text-opacity: 1;
   color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover {
+.hover\\:underline:hover {
   text-decoration-line: underline;
 }
 
-@container (min-width: 56rem) {
-  .\@4xl\:order-last {
-    order: 9999;
+@container (min-width: 24rem) {
+  .\\@sm\\:visible {
+    visibility: visible;
   }
 
-  .\@4xl\:flex-row {
+  .\\@sm\\:block {
+    display: block;
+  }
+
+  .\\@sm\\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@container (min-width: 32rem) {
+  .\\@lg\\:block {
+    display: block;
+  }
+
+  .\\@lg\\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@container (min-width: 36rem) {
+  .\\@xl\\:block {
+    display: block;
+  }
+
+  .\\@xl\\:flex-row {
     flex-direction: row;
   }
 
-  .\@4xl\:items-center {
+  .\\@xl\\:items-center {
     align-items: center;
   }
 }
+
+@container (min-width: 42rem) {
+  .\\@2xl\\:order-last {
+    order: 9999;
+  }
+
+  .\\@2xl\\:block {
+    display: block;
+  }
+
+  .\\@2xl\\:flex-row {
+    flex-direction: row;
+  }
+
+  .\\@2xl\\:items-center {
+    align-items: center;
+  }
+
+  .\\@2xl\\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\\@2xl\\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@container (min-width: 64rem) {
+  .\\@5xl\\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\\:flex-row {
+    flex-direction: row;
+  }
+}
+ `
+    
